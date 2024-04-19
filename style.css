@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #150b42 ;
+}
+
+/* - - - - - - - - - - - - */
+/* navegacion              */
+/* - - - - - - - - - - - - */
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 16px;
+    color: #FEF7EE;
+    padding: 15px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    border-radius: 10px;
+}
+
+nav ul li:hover { background-color: #003e61 };
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+section h1 {
+    font-size: 40px;
+    font-weight: 800;
+    color: #FEF7EE;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.store-Grid-Container {
+    display: grid;
+    grid-template: repeat(2, 1fr) / repeat(4, 1fr);
+    gap: 20px;
+    justify-content: stretch;
+    align-items: normal;
+
+    grid-template-areas: 
+    "skin1 skin2 skin4 skin5"
+    "skin1 skin3 skin4 skin6";
+}
+
+.store-Grid-Container img {
+    width: 350px;
+    height: 100%;
+    object-fit: cover;
+}
+
+.grid-item-1 {
+    grid-area: skin1;
+}
+
+.grid-item-2 {
+    grid-area: skin2;
+}
+
+.grid-item-3 {
+    grid-area: skin3;
+}
+
+.grid-item-4 {
+    grid-area: skin4;
+}
+
+.grid-item-5 {
+    grid-area: skin5;
+}
+
+.grid-item-6 {
+    grid-area: skin6;
+}
